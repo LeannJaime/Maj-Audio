@@ -15,10 +15,12 @@ nav li{
     margin: 3px;
     background-color: black;
     border: 1px solid red;
+    transition: padding, 1s;
 }
 
 li:hover{
     background-color: darkred;
+    padding: 20px
 }
 
 a{
@@ -42,11 +44,15 @@ nav{
     margin-top: 10px;
     display: flex;
     justify-content: center;
-
 }
 
 .imagen-inicio{
     width: 80%;
+    transition: width, 2s;
+}
+
+.imagen-inicio:hover{
+    width: 90%;
 }
 
 .text-1{
