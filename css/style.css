@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+nav li{
+    display: inline-block;
+    padding: 10px;
+    margin: 3px;
+    background-color: black;
+    border: 1px solid red;
+}
+
+li:hover{
+    background-color: darkred;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    text-align: center;
+}
+
+.info-imagenes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.info{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.imagen-inicio{
+    width: 80%;
+}
+
+.text-1{
+    text-align: center;
+    margin: 20px;
+    border: 2px dashed red;
+}
+
+.fondo{
+    background-image: url(images/majaudio-transparente-2.jpg);
+    background-repeat: round;
+    background-size: contain;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.fieldset-1{
+    width: 300px;
+    height: 220px;
+}
+
+.fieldset-2{
+    width: 600px;
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+.textarea-contacto{
+    display: flex;
+    justify-content: center;
+    margin: 2% 10% 2% 10%;
+    width: 80%;
+    height: 20%;
+}
+
+.fieldset-3{
+    width: 500px;
+    height: 250px;
+}
+
+legend{
+    margin-bottom: 10px;
+}
+
+.relleno{
+    display: block;
+    margin: 20px;
+}
+
+.quienes-somos{
+    margin: 20px 80px 20px 80px;
+    text-align: center;
+}
+
+.img-quienes-somos{
+    display: flex;
+    justify-content: center;
+}
+
+.img2-quienes-somos{
+    width: 80%;
+    height: auto;
+}
+
+.fotos-contacto{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+footer{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.redes{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas:
+    "instagram" "facebook" "whatsapp";
+}
+
+footer a{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+.instagram{
+    grid-area: instagram;
+}
+
+.facebook{
+    grid-area: facebook;
+}
+
+.whataspp{
+    grid-area: whataspp;
+}
+
+@media screen and (max-width: 480px) {
+
+    .info-imagenes{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .redes{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas:
+        "instagram"
+        "facebook"
+        "whatsapp";
+    }
+
+    .instagram{
+        grid-area: instagram;
+    }
+    
+    .facebook{
+        grid-area: facebook;
+    }
+    
+    .whataspp{
+        grid-area: whataspp;
+    }
+
+    .fotos-contacto{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+    }
+}
