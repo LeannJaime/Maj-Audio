@@ -17,8 +17,13 @@
         </div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                         </li>
@@ -44,36 +49,33 @@
         <form class="formulario">
             <fieldset class="fieldset-1">
                 <legend> Formulario de compra </legend>
-                <br>
-                <select name="producto">
-                    <option value="seleccionar">Seleccionar producto</option>
-                    <option value="sub">Subwoofer</option>
-                    <option value="mid">Medios</option>
-                    <option value="coaxial">Coaxiales</option>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Seleccionar producto</option>
+                    <option value="1">Subwoofer</option>
+                    <option value="2">Medios</option>
+                    <option value="3">Coaxiales</option>
                 </select>
-                <br>
-                <br>
-                <select name="tamaño">
-                    <option value="seleccionar">Seleccionar tamaño</option>
-                    <option value="10">10"</option>
-                    <option value="12">12"</option>
-                    <option value="15">15"</option>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Seleccionar tamaño</option>
+                    <option value="1">10"</option>
+                    <option value="2">12"</option>
+                    <option value="3">15"</option>
                 </select>
-                <br>
-                <br>
-                <div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
                     ¿Acepta terminos y condiciones?
-                    <input type="checkbox" name="check">
-                    <br>
-                    <br>
-                    <input type="submit" value="Comprar">
+                    </label>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-success boton" type="submit">Comprar</button>
                 </div>
             </fieldset>
         </form>
     </main>
 
     <footer>
-        <h3>Somos Maj Audio </h3>
+        <h3 class="footer-h3">Somos Maj Audio</h3>
 
         <section class="redes">
             <p><a class="instagram" href="https://www.instagram.com/majaudio/">instagram</a></p>
