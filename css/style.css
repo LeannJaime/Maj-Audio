@@ -238,4 +238,8 @@ footer a{
         grid-template-rows: repeat(3, 1fr);
         justify-items: center;
     }
+
+    .carrusel{
+        width: 100%;
+    }
 }
