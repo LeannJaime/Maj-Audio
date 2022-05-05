@@ -1,0 +1,29 @@
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+nav{
+    text-align: center;
+    li{
+        padding: 0px 5px 0px 5px;
+        margin: 2px;
+        background-color: rgb(49, 49, 49);
+        border-radius: 8px;
+        transition: padding, 1s;
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    }
+}
+
+li:hover{
+    background-color: darkred;
+    padding: 3px 9px 3px 9px;
+}
+
+

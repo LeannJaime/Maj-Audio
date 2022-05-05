@@ -1,0 +1,14 @@
+.fotos-contacto{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    .imagen-inicio{
+        width: 80%;
+        transition: width, 2s;
+        :hover{
+            width: 90%;
+        }
+    }
+}
