@@ -1,0 +1,12 @@
+// $rojo: red;
+// $blanco: white;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+$color: (
+    'rojo': red,
+    'blanco': white,
+);

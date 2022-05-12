@@ -1,11 +1,12 @@
+@import "../variables/variables";
+
 .info-imagenes{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     .info{
         margin-top: 10px;
-        display: flex;
-        justify-content: center;
+        @include flex-center;
         .imagen-inicio{
             width: 80%;
             transition: width, 2s;
@@ -27,8 +28,7 @@
 }
 
 .formulario{
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     text-align: center;
     margin-top: 30px;
     .fieldset-1{
@@ -78,8 +78,7 @@
 }
 
 .img-quienes-somos{
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     .img2-quienes-somos{
         width: 80%;
         height: auto;
