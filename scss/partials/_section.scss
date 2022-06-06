@@ -1,16 +1,17 @@
 @import "./variables";
 
-.fotos-contacto{
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    justify-items: center;
-    .imagen-inicio{
-        width: 80%;
-        transition: width, 2s;
-        :hover{
-            width: 90%;
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.info-imagenes{
+    .info{
+        margin-top: 30px;
         }
+    .descrip{
+        margin-top: 15px;
+        font-family: fuente1;
+        text-align: center;
     }
 }

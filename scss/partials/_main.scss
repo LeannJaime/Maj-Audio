@@ -1,32 +1,5 @@
 @import "./variables";
 
-.info-imagenes{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    .info{
-        margin-top: 10px;
-        @include flex-center;
-        .imagen-inicio{
-            width: 80%;
-            transition: width, 2s;
-            }
-            :hover{
-                width: 90%;
-            }
-        }
-}
-
-.fondo{
-    background-image: url(images/majaudio-transparente-2.jpg);
-    background-repeat: round;
-    background-size: contain;
-    .text-1{
-        text-align: center;
-        margin: 20px;
-    }
-}
-
 .formulario{
     @include flex-center;
     text-align: center;
@@ -61,6 +34,8 @@
 .quienes-somos{
     margin: 20px 80px 20px 80px;
     text-align: center;
+    font-size: 25px;
+    font-family: fuente1;
 }
 
 .map-responsive{
@@ -85,3 +60,15 @@
     }
 }
 
+.donde{
+    font-size: 50px;
+    font-family: fuente1;
+    text-align: center;
+}
+
+#productos{
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(219, 219, 219, 0.808), black, black, black, rgba(219, 219, 219, 0.808), );
+    color: map-get($color, blanco);
+    font-family: fuente1;
+}

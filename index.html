@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Trabajos personalizados de audiocar">
-    <meta name="keywords"  content="Audio, Audiocar, Sonido, Autos">
+    <meta name="keywords" content="Audio, Audiocar, Sonido, Autos">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/majaudio.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/3dbe6f6bcf.js" crossorigin="anonymous"></script>
     <title>MAJ AUDIO</title>
 </head>
 
@@ -19,7 +20,7 @@
         <div class="logo">
             <img src="images/majaudio.png" alt="logo" width="300px">
         </div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -32,7 +33,7 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/comprar.html">Comprar</a>
+                            <a class="nav-link" href="#productos">Productos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/quienessomos.html">Quienes somos</a>
@@ -44,10 +45,10 @@
                             <a class="nav-link" href="./pages/registro.html">Registrarse</a>
                         </li>
                     </ul>
-                    <form class="d-flex mx-auto">
+                    <!-- <form class="d-flex mx-auto">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </nav>
@@ -55,7 +56,7 @@
 
     <main>
 
-        <section class="carrusel container">
+        <section class="carrusel">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -89,61 +90,74 @@
             </div>
         </section>
 
-        <section class="info-imagenes">
-            <div class="info">
-                <img class="imagen-inicio" src="images/275954531_664339661542872_805703132341614218_n.jpg" alt="sub">
+        <h1 id="productos">PRODUCTOS</h1>
+
+        <section class="container info-imagenes">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="./pages/comprar.html"><img class="img-fluid info container" src="images/10xspl.png" alt="sub">
+                    <h2 class="descrip">Subwoofer 10" 800Wrms</h2></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="./pages/comprar.html"><img class="img-fluid info container" src="images/15xmax.png" alt="sub">
+                    <h2 class="descrip">Subwoofer 15" 3500Wrms</h2></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="./pages/comprar.html"><img class="img-fluid info container" src="images/38d2.png" alt="sub">
+                    <h2 class="descrip">Subwoofer 15" 1500Wrms</h2></a>
+                </div>
             </div>
-            <div class="info">
-                <img class="imagen-inicio" src="images/276112277_664339601542878_2261158625347387077_n.jpg" alt="sub">
-            </div>
-            <div class="info">
-                <img class="imagen-inicio" src="images/276124243_664339678209537_1656611765408810935_n.jpg" alt="sub">
-            </div>
-            <div class="info">
-                <img class="imagen-inicio" src="images/275954531_664339661542872_805703132341614218_n.jpg" alt="sub">
-            </div>
-            <div class="info">
-                <img class="imagen-inicio" src="images/276112277_664339601542878_2261158625347387077_n.jpg" alt="sub">
-            </div>
-            <div class="info">
-                <img class="imagen-inicio" src="images/276124243_664339678209537_1656611765408810935_n.jpg" alt="sub">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="./pages/comprar.html"><img class="img-fluid info container" src="images/6x9.png" alt="sub">
+                    <h2 class="descrip">Coaxiales 6x9 120Wrms</h2></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="./pages/comprar.html"><img class="img-fluid info container" src="images/compo.png" alt="sub">
+                    <h2 class="descrip">Set componentes 6,5" 120Wrms</h2></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="./pages/comprar.html"><img class="img-fluid info container" src="images/platinium.png" alt="sub">
+                    <h2 class="descrip">Subwoofer 10" 900Wrms</h2></a>
+                </div>
             </div>
         </section>
+
     </main>
 
-    <div class="fondo">
-        <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit doloribus perspiciatis
-            dignissimos nam repellat ea commodi dolorem quam obcaecati perferendis porro harum qui consequatur
-            necessitatibus, libero repellendus assumenda, illum maxime doloremque animi tempore iure eveniet nisi.
-            Repudiandae officia voluptates atque recusandae laboriosam obcaecati tenetur aut repellendus eaque, alias
-            excepturi maiores accusantium eius sunt itaque nisi cum soluta perferendis, quidem consectetur. Doloremque
-            dolores impedit eaque minus vel ipsam fugit aspernatur maiores cumque atque sapiente eum harum officiis odit
-            labore, neque esse excepturi, repellendus quibusdam voluptates corrupti iste! Consectetur soluta inventore
-            repellendus suscipit dolor culpa accusamus dignissimos, modi tempore qui eveniet excepturi praesentium
-            impedit officiis ea voluptate vitae, vero hic explicabo porro atque in iste natus voluptatum! Aliquid
-            eveniet expedita iste nisi quae, dignissimos esse dolores assumenda perspiciatis deserunt rerum laborum
-            dolore! Iste voluptatum incidunt inventore rem corrupti reiciendis officiis impedit expedita adipisci sed
-            ratione laudantium porro itaque, obcaecati beatae error vel eaque qui ad ea magnam. Vero, temporibus aliquid
-            ab distinctio eligendi sed tenetur. Voluptatibus pariatur voluptatem iste, praesentium dolore repellendus
-            voluptates rerum ad atque sapiente, sunt voluptate? Consequatur omnis nam enim atque odit maiores
-            exercitationem alias eaque nihil facere nesciunt veritatis pariatur, sint nemo rerum deserunt neque quam
-            ipsa amet?</p>
-
-    </div>
-
-    <footer>
+    <footer class="bg-black text-center text-white">
         <p class="footer-h3">Somos Maj Audio</p>
 
-        <div class="redes">
-            <p><a class="instagram" href="https://www.instagram.com/majaudio/">instagram</a></p>
-            <p><a class="facebook" href="https://www.facebook.com/Maj-Audio-198122783582310">Facebook</a></p>
-            <p><a class="whatsapp" href="https://wa.me/message/EQ5H744LUDWNF1">WhatsApp</a></p>
+        <div class="container p-1 pb-0">
+            <p>VISITANOS:</p>
+            <section class="mb-4">
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/majaudio/"
+                    role="button">
+                    <i class="fab fa-instagram"></i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://www.facebook.com/Maj-Audio-198122783582310" role="button">
+                    <i class="fab fa-facebook"></i></a>
+            </section>
         </div>
+        <div class="container p-1 pb-0">
+            <p>O CHATEA CON NOSOTROS:</p>
+            <section class="mb-4">
+                <a class="btn btn-outline-light btn-floating m-1" href="https://wa.me/message/EQ5H744LUDWNF1"
+                    role="button">
+                    <i class="fab fa-whatsapp"></i></a>
+            </section>
+        </div>
+
+        <div class="text-center p-3 bg-dark">© 2022 Copyright: leannweb.com
+        </div>
+
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

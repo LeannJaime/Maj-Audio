@@ -8,7 +8,7 @@ nav {
   nav li {
     padding: 0px 5px 0px 5px;
     margin: 2px;
-    background-color: #313131;
+    background-color: #111111;
     border-radius: 8px;
     transition: padding, 1s; }
     nav li a {
@@ -18,30 +18,7 @@ nav {
       font-family: Georgia, 'Times New Roman', Times, serif; }
 
 li:hover {
-  background-color: red;
-  padding: 3px 9px 3px 9px; }
-
-.info-imagenes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr); }
-  .info-imagenes .info {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center; }
-    .info-imagenes .info .imagen-inicio {
-      width: 80%;
-      transition: width, 2s; }
-    .info-imagenes .info :hover {
-      width: 90%; }
-
-.fondo {
-  background-image: url(images/majaudio-transparente-2.jpg);
-  background-repeat: round;
-  background-size: contain; }
-  .fondo .text-1 {
-    text-align: center;
-    margin: 20px; }
+  background-color: red; }
 
 .formulario {
   display: flex;
@@ -71,7 +48,9 @@ legend {
 
 .quienes-somos {
   margin: 20px 80px 20px 80px;
-  text-align: center; }
+  text-align: center;
+  font-size: 25px;
+  font-family: fuente1; }
 
 .map-responsive {
   overflow: hidden;
@@ -92,6 +71,17 @@ legend {
     width: 80%;
     height: auto; }
 
+.donde {
+  font-size: 50px;
+  font-family: fuente1;
+  text-align: center; }
+
+#productos {
+  text-align: center;
+  background-image: linear-gradient(to right, rgba(219, 219, 219, 0.808), black, black, black, rgba(219, 219, 219, 0.808));
+  color: white;
+  font-family: fuente1; }
+
 footer {
   margin-top: 50px;
   text-align: center;
@@ -100,65 +90,18 @@ footer {
   footer .footer-h3 {
     padding-top: 20px;
     font-size: 50px; }
-  footer .redes {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-areas: "instagram" "facebook" "whatsapp"; }
-    footer .redes a {
-      display: flex;
-      justify-content: center;
-      margin-top: 30px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 20px;
-      color: white;
-      text-decoration: none; }
-    footer .redes :hover {
-      color: red; }
 
-.instagram {
-  grid-area: instagram; }
+a {
+  text-decoration: none;
+  color: black; }
 
-.facebook {
-  grid-area: facebook; }
+.info-imagenes .info {
+  margin-top: 30px; }
 
-.whataspp {
-  grid-area: whataspp; }
-
-@media screen and (max-width: 480px) {
-  .info-imagenes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr); }
-  .redes {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-areas: "instagram" "facebook" "whatsapp"; }
-  .instagram {
-    grid-area: instagram; }
-  .facebook {
-    grid-area: facebook; }
-  .whataspp {
-    grid-area: whataspp; }
-  .fotos-contacto {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    justify-items: center; }
-  .carrusel {
-    width: 100%; } }
-
-.fotos-contacto {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  justify-items: center; }
-  .fotos-contacto .imagen-inicio {
-    width: 80%;
-    transition: width, 2s; }
-    .fotos-contacto .imagen-inicio :hover {
-      width: 90%; }
+.info-imagenes .descrip {
+  margin-top: 15px;
+  font-family: fuente1;
+  text-align: center; }
 
 * {
   margin: 0;

@@ -10,7 +10,7 @@ nav{
     li{
         padding: 0px 5px 0px 5px;
         margin: 2px;
-        background-color: rgb(49, 49, 49);
+        background-color: rgb(17, 17, 17);
         border-radius: 8px;
         transition: padding, 1s;
         a{
@@ -24,7 +24,6 @@ nav{
 
 li:hover{
     background-color: map-get($color, rojo);
-    padding: 3px 9px 3px 9px;
 }
 
 
